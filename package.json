@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Driver Face KYC & Liveness Online Verification",
   "scripts": {
-    "build": "echo 'Static build complete'",
-    "start": "node server.js"
+    "start": "node local_dev_server/server.js"
   },
   "keywords": [
     "face-kyc",

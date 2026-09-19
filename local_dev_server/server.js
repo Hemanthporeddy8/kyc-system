@@ -392,7 +392,7 @@ const server = http.createServer((req, res) => {
   if (safePath === '/enterprise-kyc' || safePath === '/enterprise-kyc/' || safePath === '\\enterprise-kyc' || safePath === '\\enterprise-kyc\\') {
     safePath = '/enterprise-kyc/index.html';
   }
-  const filePath = path.join(__dirname, safePath);
+  const filePath = path.join(__dirname, '..', safePath);
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
