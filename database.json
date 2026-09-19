@@ -1,0 +1,2916 @@
+{
+  "drivers": {
+    "DRV-1001": {
+      "id": "DRV-1001",
+      "name": "Driver (You)",
+      "vehicle": "DL-01-AB-1234",
+      "reference_photo": "data:image/jpeg;base64,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",
+      "reference_landmarks": [
+        {
+          "x": 0.5394396185874939,
+          "y": 0.5491904616355896,
+          "z": -0.03405752778053284,
+          "visibility": 0
+        },
+        {
+          "x": 0.5395587086677551,
+          "y": 0.5005709528923035,
+          "z": -0.05674067884683609,
+          "visibility": 0
+        },
+        {
+          "x": 0.5397061705589294,
+          "y": 0.5175004601478577,
+          "z": -0.03183232247829437,
+          "visibility": 0
+        },
+        {
+          "x": 0.5308562517166138,
+          "y": 0.4558942914009094,
+          "z": -0.03908168897032738,
+          "visibility": 0
+        },
+        {
+          "x": 0.5396783351898193,
+          "y": 0.485842227935791,
+          "z": -0.0594167597591877,
+          "visibility": 0
+        },
+        {
+          "x": 0.5397030115127563,
+          "y": 0.4680100679397583,
+          "z": -0.05387052893638611,
+          "visibility": 0
+        },
+        {
+          "x": 0.5404819250106812,
+          "y": 0.42645347118377686,
+          "z": -0.02203633263707161,
+          "visibility": 0
+        },
+        {
+          "x": 0.4632193148136139,
+          "y": 0.43003806471824646,
+          "z": 0.021337954327464104,
+          "visibility": 0
+        },
+        {
+          "x": 0.540535569190979,
+          "y": 0.3935393691062927,
+          "z": -0.012643352150917053,
+          "visibility": 0
+        },
+        {
+          "x": 0.540652871131897,
+          "y": 0.3735610544681549,
+          "z": -0.013207988813519478,
+          "visibility": 0
+        },
+        {
+          "x": 0.5406840443611145,
+          "y": 0.3033347427845001,
+          "z": 0.004589260555803776,
+          "visibility": 0
+        },
+        {
+          "x": 0.5394297242164612,
+          "y": 0.5545662045478821,
+          "z": -0.03306333348155022,
+          "visibility": 0
+        },
+        {
+          "x": 0.5395203828811646,
+          "y": 0.5597347617149353,
+          "z": -0.029908617958426476,
+          "visibility": 0
+        },
+        {
+          "x": 0.5394456386566162,
+          "y": 0.5636792778968811,
+          "z": -0.025219205766916275,
+          "visibility": 0
+        },
+        {
+          "x": 0.539469301700592,
+          "y": 0.5638752579689026,
+          "z": -0.02412068285048008,
+          "visibility": 0
+        },
+        {
+          "x": 0.5391416549682617,
+          "y": 0.5682798027992249,
+          "z": -0.025977786630392075,
+          "visibility": 0
+        },
+        {
+          "x": 0.5391504168510437,
+          "y": 0.5738196969032288,
+          "z": -0.029166728258132935,
+          "visibility": 0
+        },
+        {
+          "x": 0.5388009548187256,
+          "y": 0.5801776647567749,
+          "z": -0.029284168034791946,
+          "visibility": 0
+        },
+        {
+          "x": 0.5394033193588257,
+          "y": 0.602177619934082,
+          "z": -0.02235521748661995,
+          "visibility": 0
+        },
+        {
+          "x": 0.5395650863647461,
+          "y": 0.5090163946151733,
+          "z": -0.05184867978096008,
+          "visibility": 0
+        },
+        {
+          "x": 0.5294111967086792,
+          "y": 0.5102506875991821,
+          "z": -0.03762734681367874,
+          "visibility": 0
+        },
+        {
+          "x": 0.42129287123680115,
+          "y": 0.37806063890457153,
+          "z": 0.07755336910486221,
+          "visibility": 0
+        },
+        {
+          "x": 0.49388107657432556,
+          "y": 0.4415474236011505,
+          "z": 0.008770144544541836,
+          "visibility": 0
+        },
+        {
+          "x": 0.48329290747642517,
+          "y": 0.4431295096874237,
+          "z": 0.009784772992134094,
+          "visibility": 0
+        },
+        {
+          "x": 0.4728490710258484,
+          "y": 0.4424828886985779,
+          "z": 0.013054095208644867,
+          "visibility": 0
+        },
+        {
+          "x": 0.45923328399658203,
+          "y": 0.43475133180618286,
+          "z": 0.02268407680094242,
+          "visibility": 0
+        },
+        {
+          "x": 0.5024123787879944,
+          "y": 0.4374808967113495,
+          "z": 0.0100864227861166,
+          "visibility": 0
+        },
+        {
+          "x": 0.4779978394508362,
+          "y": 0.3978841006755829,
+          "z": 0.007223249413073063,
+          "visibility": 0
+        },
+        {
+          "x": 0.4898254871368408,
+          "y": 0.39976444840431213,
+          "z": 0.007121692411601543,
+          "visibility": 0
+        },
+        {
+          "x": 0.4670863747596741,
+          "y": 0.4007805585861206,
+          "z": 0.010822433046996593,
+          "visibility": 0
+        },
+        {
+          "x": 0.459899365901947,
+          "y": 0.4071580767631531,
+          "z": 0.015143307857215405,
+          "visibility": 0
+        },
+        {
+          "x": 0.45125022530555725,
+          "y": 0.44353950023651123,
+          "z": 0.02769629657268524,
+          "visibility": 0
+        },
+        {
+          "x": 0.49985599517822266,
+          "y": 0.632700502872467,
+          "z": -0.011541560292243958,
+          "visibility": 0
+        },
+        {
+          "x": 0.45966821908950806,
+          "y": 0.4259687066078186,
+          "z": 0.025151032954454422,
+          "visibility": 0
+        },
+        {
+          "x": 0.41795429587364197,
+          "y": 0.4413035809993744,
+          "z": 0.07620830833911896,
+          "visibility": 0
+        },
+        {
+          "x": 0.43876034021377563,
+          "y": 0.43448716402053833,
+          "z": 0.039469409734010696,
+          "visibility": 0
+        },
+        {
+          "x": 0.4860959053039551,
+          "y": 0.4944266676902771,
+          "z": -0.005804846063256264,
+          "visibility": 0
+        },
+        {
+          "x": 0.5260306596755981,
+          "y": 0.547003984451294,
+          "z": -0.03239862993359566,
+          "visibility": 0
+        },
+        {
+          "x": 0.5275253057479858,
+          "y": 0.5600759983062744,
+          "z": -0.028214525431394577,
+          "visibility": 0
+        },
+        {
+          "x": 0.5124453902244568,
+          "y": 0.5531172156333923,
+          "z": -0.02648969367146492,
+          "visibility": 0
+        },
+        {
+          "x": 0.5035730600357056,
+          "y": 0.5590347051620483,
+          "z": -0.019317839294672012,
+          "visibility": 0
+        },
+        {
+          "x": 0.5165483355522156,
+          "y": 0.5616788268089294,
+          "z": -0.02407148852944374,
+          "visibility": 0
+        },
+        {
+          "x": 0.5081572532653809,
+          "y": 0.564094603061676,
+          "z": -0.017511241137981415,
+          "visibility": 0
+        },
+        {
+          "x": 0.48970842361450195,
+          "y": 0.5830402970314026,
+          "z": -0.006326304282993078,
+          "visibility": 0
+        },
+        {
+          "x": 0.5302920341491699,
+          "y": 0.5004940032958984,
+          "z": -0.055695634335279465,
+          "visibility": 0
+        },
+        {
+          "x": 0.5293181538581848,
+          "y": 0.48605409264564514,
+          "z": -0.05791112035512924,
+          "visibility": 0
+        },
+        {
+          "x": 0.44522038102149963,
+          "y": 0.3937927782535553,
+          "z": 0.019985925406217575,
+          "visibility": 0
+        },
+        {
+          "x": 0.5080241560935974,
+          "y": 0.45926907658576965,
+          "z": -0.004505895543843508,
+          "visibility": 0
+        },
+        {
+          "x": 0.5039383769035339,
+          "y": 0.4993549585342407,
+          "z": -0.028962085023522377,
+          "visibility": 0
+        },
+        {
+          "x": 0.5035226941108704,
+          "y": 0.4922880530357361,
+          "z": -0.0252828449010849,
+          "visibility": 0
+        },
+        {
+          "x": 0.45407333970069885,
+          "y": 0.4948006272315979,
+          "z": 0.008681963197886944,
+          "visibility": 0
+        },
+        {
+          "x": 0.5298975706100464,
+          "y": 0.46963369846343994,
+          "z": -0.05044618993997574,
+          "visibility": 0
+        },
+        {
+          "x": 0.4700145721435547,
+          "y": 0.3745112121105194,
+          "z": 0.0017137888353317976,
+          "visibility": 0
+        },
+        {
+          "x": 0.4554370939731598,
+          "y": 0.3814360797405243,
+          "z": 0.010317734442651272,
+          "visibility": 0
+        },
+        {
+          "x": 0.431724488735199,
+          "y": 0.34987935423851013,
+          "z": 0.05823301151394844,
+          "visibility": 0
+        },
+        {
+          "x": 0.517459511756897,
+          "y": 0.38886940479278564,
+          "z": -0.009063548408448696,
+          "visibility": 0
+        },
+        {
+          "x": 0.49991530179977417,
+          "y": 0.40620386600494385,
+          "z": 0.009904908016324043,
+          "visibility": 0
+        },
+        {
+          "x": 0.4807484745979309,
+          "y": 0.5711477398872375,
+          "z": -0.001676630461588502,
+          "visibility": 0
+        },
+        {
+          "x": 0.42523568868637085,
+          "y": 0.5846422910690308,
+          "z": 0.09050171077251434,
+          "visibility": 0
+        },
+        {
+          "x": 0.5121756792068481,
+          "y": 0.5075863003730774,
+          "z": -0.025778984650969505,
+          "visibility": 0
+        },
+        {
+          "x": 0.5216618180274963,
+          "y": 0.5120210647583008,
+          "z": -0.02769622765481472,
+          "visibility": 0
+        },
+        {
+          "x": 0.4930739402770996,
+          "y": 0.5692782998085022,
+          "z": -0.003354924265295267,
+          "visibility": 0
+        },
+        {
+          "x": 0.4957377314567566,
+          "y": 0.5684352517127991,
+          "z": -0.006625301204621792,
+          "visibility": 0
+        },
+        {
+          "x": 0.4489062428474426,
+          "y": 0.37219661474227905,
+          "z": 0.016650039702653885,
+          "visibility": 0
+        },
+        {
+          "x": 0.5033239722251892,
+          "y": 0.506349503993988,
+          "z": -0.023690594360232353,
+          "visibility": 0
+        },
+        {
+          "x": 0.4902745187282562,
+          "y": 0.3759233057498932,
+          "z": -0.00487087806686759,
+          "visibility": 0
+        },
+        {
+          "x": 0.48842066526412964,
+          "y": 0.3631993234157562,
+          "z": -0.005917081143707037,
+          "visibility": 0
+        },
+        {
+          "x": 0.47710686922073364,
+          "y": 0.31161993741989136,
+          "z": 0.01860800012946129,
+          "visibility": 0
+        },
+        {
+          "x": 0.44030770659446716,
+          "y": 0.36149758100509644,
+          "z": 0.034451939165592194,
+          "visibility": 0
+        },
+        {
+          "x": 0.48370394110679626,
+          "y": 0.3372417390346527,
+          "z": 0.005673223175108433,
+          "visibility": 0
+        },
+        {
+          "x": 0.4382917881011963,
+          "y": 0.3884719908237457,
+          "z": 0.029831821098923683,
+          "visibility": 0
+        },
+        {
+          "x": 0.42952871322631836,
+          "y": 0.3846673369407654,
+          "z": 0.052224259823560715,
+          "visibility": 0
+        },
+        {
+          "x": 0.5264506340026855,
+          "y": 0.5539796948432922,
+          "z": -0.031556420028209686,
+          "visibility": 0
+        },
+        {
+          "x": 0.5146439075469971,
+          "y": 0.5577231049537659,
+          "z": -0.02587895654141903,
+          "visibility": 0
+        },
+        {
+          "x": 0.5058703422546387,
+          "y": 0.5613134503364563,
+          "z": -0.019409645348787308,
+          "visibility": 0
+        },
+        {
+          "x": 0.5148933529853821,
+          "y": 0.5106214880943298,
+          "z": -0.023804064840078354,
+          "visibility": 0
+        },
+        {
+          "x": 0.4944080710411072,
+          "y": 0.5689290761947632,
+          "z": -0.005134216509759426,
+          "visibility": 0
+        },
+        {
+          "x": 0.5001112818717957,
+          "y": 0.5697972774505615,
+          "z": -0.012511302717030048,
+          "visibility": 0
+        },
+        {
+          "x": 0.4974428117275238,
+          "y": 0.5681664347648621,
+          "z": -0.006968286819756031,
+          "visibility": 0
+        },
+        {
+          "x": 0.5181593298912048,
+          "y": 0.5012837052345276,
+          "z": -0.03985990211367607,
+          "visibility": 0
+        },
+        {
+          "x": 0.5101036429405212,
+          "y": 0.5656219720840454,
+          "z": -0.01578458584845066,
+          "visibility": 0
+        },
+        {
+          "x": 0.5185254812240601,
+          "y": 0.5641136169433594,
+          "z": -0.02001902461051941,
+          "visibility": 0
+        },
+        {
+          "x": 0.5288147330284119,
+          "y": 0.5635783672332764,
+          "z": -0.023758959025144577,
+          "visibility": 0
+        },
+        {
+          "x": 0.5257628560066223,
+          "y": 0.6018968820571899,
+          "z": -0.021832434460520744,
+          "visibility": 0
+        },
+        {
+          "x": 0.5269289612770081,
+          "y": 0.5794650316238403,
+          "z": -0.028472403064370155,
+          "visibility": 0
+        },
+        {
+          "x": 0.5272306203842163,
+          "y": 0.5730982422828674,
+          "z": -0.028322506695985794,
+          "visibility": 0
+        },
+        {
+          "x": 0.5279260873794556,
+          "y": 0.5679558515548706,
+          "z": -0.024655679240822792,
+          "visibility": 0
+        },
+        {
+          "x": 0.5288301706314087,
+          "y": 0.5633715391159058,
+          "z": -0.022828465327620506,
+          "visibility": 0
+        },
+        {
+          "x": 0.5103000402450562,
+          "y": 0.5656255483627319,
+          "z": -0.01570749841630459,
+          "visibility": 0
+        },
+        {
+          "x": 0.5087627172470093,
+          "y": 0.5678712129592896,
+          "z": -0.017783399671316147,
+          "visibility": 0
+        },
+        {
+          "x": 0.5070391893386841,
+          "y": 0.5708950757980347,
+          "z": -0.020171407610177994,
+          "visibility": 0
+        },
+        {
+          "x": 0.5055676102638245,
+          "y": 0.5745182037353516,
+          "z": -0.01904207095503807,
+          "visibility": 0
+        },
+        {
+          "x": 0.49285992980003357,
+          "y": 0.5451450347900391,
+          "z": -0.01518264226615429,
+          "visibility": 0
+        },
+        {
+          "x": 0.4157014787197113,
+          "y": 0.5124577879905701,
+          "z": 0.11419063806533813,
+          "visibility": 0
+        },
+        {
+          "x": 0.5395729541778564,
+          "y": 0.513529896736145,
+          "z": -0.038583435118198395,
+          "visibility": 0
+        },
+        {
+          "x": 0.5038210153579712,
+          "y": 0.5669324994087219,
+          "z": -0.01110009104013443,
+          "visibility": 0
+        },
+        {
+          "x": 0.5021992921829224,
+          "y": 0.568571150302887,
+          "z": -0.01236112229526043,
+          "visibility": 0
+        },
+        {
+          "x": 0.5249508023262024,
+          "y": 0.5174424648284912,
+          "z": -0.029032498598098755,
+          "visibility": 0
+        },
+        {
+          "x": 0.5068467855453491,
+          "y": 0.515557587146759,
+          "z": -0.0170541163533926,
+          "visibility": 0
+        },
+        {
+          "x": 0.5233801603317261,
+          "y": 0.5150368809700012,
+          "z": -0.028494874015450478,
+          "visibility": 0
+        },
+        {
+          "x": 0.49676743149757385,
+          "y": 0.46843427419662476,
+          "z": -0.0014732256531715393,
+          "visibility": 0
+        },
+        {
+          "x": 0.4796372056007385,
+          "y": 0.4776037335395813,
+          "z": 0.0011773561127483845,
+          "visibility": 0
+        },
+        {
+          "x": 0.501625657081604,
+          "y": 0.49951106309890747,
+          "z": -0.01975877210497856,
+          "visibility": 0
+        },
+        {
+          "x": 0.44961339235305786,
+          "y": 0.32691583037376404,
+          "z": 0.03712168708443642,
+          "visibility": 0
+        },
+        {
+          "x": 0.45765605568885803,
+          "y": 0.34505751729011536,
+          "z": 0.019333556294441223,
+          "visibility": 0
+        },
+        {
+          "x": 0.4659365713596344,
+          "y": 0.3627427816390991,
+          "z": 0.004928860813379288,
+          "visibility": 0
+        },
+        {
+          "x": 0.4995296597480774,
+          "y": 0.5901104807853699,
+          "z": -0.01303111296147108,
+          "visibility": 0
+        },
+        {
+          "x": 0.5139889717102051,
+          "y": 0.36854028701782227,
+          "z": -0.011766316369175911,
+          "visibility": 0
+        },
+        {
+          "x": 0.5104603171348572,
+          "y": 0.33650732040405273,
+          "z": -0.002495898399502039,
+          "visibility": 0
+        },
+        {
+          "x": 0.5064294338226318,
+          "y": 0.30473554134368896,
+          "z": 0.007390753366053104,
+          "visibility": 0
+        },
+        {
+          "x": 0.46427807211875916,
+          "y": 0.4402240514755249,
+          "z": 0.017988556995987892,
+          "visibility": 0
+        },
+        {
+          "x": 0.4403711259365082,
+          "y": 0.4536602199077606,
+          "z": 0.03324837610125542,
+          "visibility": 0
+        },
+        {
+          "x": 0.5077627897262573,
+          "y": 0.43287816643714905,
+          "z": 0.011789863929152489,
+          "visibility": 0
+        },
+        {
+          "x": 0.44952473044395447,
+          "y": 0.4144512116909027,
+          "z": 0.024555716663599014,
+          "visibility": 0
+        },
+        {
+          "x": 0.5157089233398438,
+          "y": 0.4494575560092926,
+          "z": -0.007881730794906616,
+          "visibility": 0
+        },
+        {
+          "x": 0.5112355947494507,
+          "y": 0.49297869205474854,
+          "z": -0.039023011922836304,
+          "visibility": 0
+        },
+        {
+          "x": 0.4279068112373352,
+          "y": 0.46576887369155884,
+          "z": 0.044280651956796646,
+          "visibility": 0
+        },
+        {
+          "x": 0.4480076730251312,
+          "y": 0.46195879578590393,
+          "z": 0.022614073008298874,
+          "visibility": 0
+        },
+        {
+          "x": 0.461865097284317,
+          "y": 0.46568015217781067,
+          "z": 0.011968601495027542,
+          "visibility": 0
+        },
+        {
+          "x": 0.4817747473716736,
+          "y": 0.4636037051677704,
+          "z": 0.006966790650039911,
+          "visibility": 0
+        },
+        {
+          "x": 0.4963045120239258,
+          "y": 0.45777076482772827,
+          "z": 0.004691615235060453,
+          "visibility": 0
+        },
+        {
+          "x": 0.5074905753135681,
+          "y": 0.45077845454216003,
+          "z": 0.0021967319771647453,
+          "visibility": 0
+        },
+        {
+          "x": 0.5301713943481445,
+          "y": 0.43016138672828674,
+          "z": -0.01802884414792061,
+          "visibility": 0
+        },
+        {
+          "x": 0.4285629391670227,
+          "y": 0.4952811598777771,
+          "z": 0.03900342434644699,
+          "visibility": 0
+        },
+        {
+          "x": 0.4410904347896576,
+          "y": 0.4129382371902466,
+          "z": 0.03001868724822998,
+          "visibility": 0
+        },
+        {
+          "x": 0.5340478420257568,
+          "y": 0.5085844993591309,
+          "z": -0.05115721747279167,
+          "visibility": 0
+        },
+        {
+          "x": 0.5084558129310608,
+          "y": 0.47241830825805664,
+          "z": -0.010072046890854836,
+          "visibility": 0
+        },
+        {
+          "x": 0.4145880341529846,
+          "y": 0.4434982240200043,
+          "z": 0.11233439296483994,
+          "visibility": 0
+        },
+        {
+          "x": 0.5160781145095825,
+          "y": 0.4423080086708069,
+          "z": 0.0012316445354372263,
+          "visibility": 0
+        },
+        {
+          "x": 0.5008744597434998,
+          "y": 0.5014410018920898,
+          "z": -0.009174500592052937,
+          "visibility": 0
+        },
+        {
+          "x": 0.45525282621383667,
+          "y": 0.42605653405189514,
+          "z": 0.027196189388632774,
+          "visibility": 0
+        },
+        {
+          "x": 0.5110257863998413,
+          "y": 0.48474472761154175,
+          "z": -0.03438922017812729,
+          "visibility": 0
+        },
+        {
+          "x": 0.4178873598575592,
+          "y": 0.5484033226966858,
+          "z": 0.10537387430667877,
+          "visibility": 0
+        },
+        {
+          "x": 0.5073384046554565,
+          "y": 0.42860129475593567,
+          "z": 0.01493843924254179,
+          "visibility": 0
+        },
+        {
+          "x": 0.5204662680625916,
+          "y": 0.4754662811756134,
+          "z": -0.044277019798755646,
+          "visibility": 0
+        },
+        {
+          "x": 0.4500470757484436,
+          "y": 0.6080121994018555,
+          "z": 0.03156479075551033,
+          "visibility": 0
+        },
+        {
+          "x": 0.45022448897361755,
+          "y": 0.6290469765663147,
+          "z": 0.048393841832876205,
+          "visibility": 0
+        },
+        {
+          "x": 0.41701969504356384,
+          "y": 0.5051836371421814,
+          "z": 0.07655639946460724,
+          "visibility": 0
+        },
+        {
+          "x": 0.43598976731300354,
+          "y": 0.591269314289093,
+          "z": 0.0468004047870636,
+          "visibility": 0
+        },
+        {
+          "x": 0.4234572947025299,
+          "y": 0.4106646180152893,
+          "z": 0.0675182193517685,
+          "visibility": 0
+        },
+        {
+          "x": 0.49645310640335083,
+          "y": 0.6511132121086121,
+          "z": -0.006596056278795004,
+          "visibility": 0
+        },
+        {
+          "x": 0.5352678894996643,
+          "y": 0.513085126876831,
+          "z": -0.037792883813381195,
+          "visibility": 0
+        },
+        {
+          "x": 0.4989396929740906,
+          "y": 0.48373815417289734,
+          "z": -0.006964730564504862,
+          "visibility": 0
+        },
+        {
+          "x": 0.42951565980911255,
+          "y": 0.4384371340274811,
+          "z": 0.05022851377725601,
+          "visibility": 0
+        },
+        {
+          "x": 0.47350937128067017,
+          "y": 0.4350890517234802,
+          "z": 0.014382990077137947,
+          "visibility": 0
+        },
+        {
+          "x": 0.48282647132873535,
+          "y": 0.43592068552970886,
+          "z": 0.011468878015875816,
+          "visibility": 0
+        },
+        {
+          "x": 0.498476505279541,
+          "y": 0.5723927021026611,
+          "z": -0.010923748835921288,
+          "visibility": 0
+        },
+        {
+          "x": 0.4291000962257385,
+          "y": 0.5256474018096924,
+          "z": 0.039400480687618256,
+          "visibility": 0
+        },
+        {
+          "x": 0.5157932639122009,
+          "y": 0.6733753085136414,
+          "z": -0.006186029873788357,
+          "visibility": 0
+        },
+        {
+          "x": 0.48205509781837463,
+          "y": 0.6570843458175659,
+          "z": 0.01727426052093506,
+          "visibility": 0
+        },
+        {
+          "x": 0.46725067496299744,
+          "y": 0.645517110824585,
+          "z": 0.03097439371049404,
+          "visibility": 0
+        },
+        {
+          "x": 0.5407159328460693,
+          "y": 0.33707407116889954,
+          "z": -0.005365137942135334,
+          "visibility": 0
+        },
+        {
+          "x": 0.5388058423995972,
+          "y": 0.6749549508094788,
+          "z": -0.009769892320036888,
+          "visibility": 0
+        },
+        {
+          "x": 0.4916853904724121,
+          "y": 0.4344806671142578,
+          "z": 0.010825121775269508,
+          "visibility": 0
+        },
+        {
+          "x": 0.4995810389518738,
+          "y": 0.43198373913764954,
+          "z": 0.012304915115237236,
+          "visibility": 0
+        },
+        {
+          "x": 0.5048016309738159,
+          "y": 0.43020009994506836,
+          "z": 0.014639804139733315,
+          "visibility": 0
+        },
+        {
+          "x": 0.43311959505081177,
+          "y": 0.4112991690635681,
+          "z": 0.041350848972797394,
+          "visibility": 0
+        },
+        {
+          "x": 0.4977826476097107,
+          "y": 0.4194580614566803,
+          "z": 0.01158059574663639,
+          "visibility": 0
+        },
+        {
+          "x": 0.4890483021736145,
+          "y": 0.41573241353034973,
+          "z": 0.010123447515070438,
+          "visibility": 0
+        },
+        {
+          "x": 0.4805481433868408,
+          "y": 0.4146665036678314,
+          "z": 0.010874247178435326,
+          "visibility": 0
+        },
+        {
+          "x": 0.47169971466064453,
+          "y": 0.4164136052131653,
+          "z": 0.013543523848056793,
+          "visibility": 0
+        },
+        {
+          "x": 0.4658207893371582,
+          "y": 0.41969209909439087,
+          "z": 0.01693848893046379,
+          "visibility": 0
+        },
+        {
+          "x": 0.4162229895591736,
+          "y": 0.40743085741996765,
+          "z": 0.09781362116336823,
+          "visibility": 0
+        },
+        {
+          "x": 0.4673575758934021,
+          "y": 0.4327804744243622,
+          "z": 0.018096953630447388,
+          "visibility": 0
+        },
+        {
+          "x": 0.5396768450737,
+          "y": 0.5287407636642456,
+          "z": -0.03040270134806633,
+          "visibility": 0
+        },
+        {
+          "x": 0.5030786395072937,
+          "y": 0.5360767841339111,
+          "z": -0.020227711647748947,
+          "visibility": 0
+        },
+        {
+          "x": 0.5120891332626343,
+          "y": 0.5046553015708923,
+          "z": -0.029211441054940224,
+          "visibility": 0
+        },
+        {
+          "x": 0.5242980718612671,
+          "y": 0.5294772982597351,
+          "z": -0.02957897260785103,
+          "visibility": 0
+        },
+        {
+          "x": 0.5406551957130432,
+          "y": 0.4112415313720703,
+          "z": -0.013335670344531536,
+          "visibility": 0
+        },
+        {
+          "x": 0.4652721881866455,
+          "y": 0.6254141330718994,
+          "z": 0.018953528255224228,
+          "visibility": 0
+        },
+        {
+          "x": 0.48025378584861755,
+          "y": 0.6384739279747009,
+          "z": 0.006536872126162052,
+          "visibility": 0
+        },
+        {
+          "x": 0.5159796476364136,
+          "y": 0.6585217714309692,
+          "z": -0.01815156452357769,
+          "visibility": 0
+        },
+        {
+          "x": 0.4368765950202942,
+          "y": 0.6109628677368164,
+          "z": 0.07009626924991608,
+          "visibility": 0
+        },
+        {
+          "x": 0.504313588142395,
+          "y": 0.42481905221939087,
+          "z": 0.013584946282207966,
+          "visibility": 0
+        },
+        {
+          "x": 0.5229291319847107,
+          "y": 0.45137134194374084,
+          "z": -0.022669240832328796,
+          "visibility": 0
+        },
+        {
+          "x": 0.5388942360877991,
+          "y": 0.6605371832847595,
+          "z": -0.021265899762511253,
+          "visibility": 0
+        },
+        {
+          "x": 0.49778875708580017,
+          "y": 0.6664794087409973,
+          "z": 0.003441970096901059,
+          "visibility": 0
+        },
+        {
+          "x": 0.4188995361328125,
+          "y": 0.5380411744117737,
+          "z": 0.07173524796962738,
+          "visibility": 0
+        },
+        {
+          "x": 0.5187563300132751,
+          "y": 0.5643101334571838,
+          "z": -0.01953691802918911,
+          "visibility": 0
+        },
+        {
+          "x": 0.5174160599708557,
+          "y": 0.5674587488174438,
+          "z": -0.021702392026782036,
+          "visibility": 0
+        },
+        {
+          "x": 0.516194760799408,
+          "y": 0.57192462682724,
+          "z": -0.024783704429864883,
+          "visibility": 0
+        },
+        {
+          "x": 0.5152102708816528,
+          "y": 0.5776033997535706,
+          "z": -0.02459653839468956,
+          "visibility": 0
+        },
+        {
+          "x": 0.5112630724906921,
+          "y": 0.5972148180007935,
+          "z": -0.018954841420054436,
+          "visibility": 0
+        },
+        {
+          "x": 0.5012723803520203,
+          "y": 0.566132128238678,
+          "z": -0.011780309490859509,
+          "visibility": 0
+        },
+        {
+          "x": 0.49903708696365356,
+          "y": 0.5654252767562866,
+          "z": -0.01154039241373539,
+          "visibility": 0
+        },
+        {
+          "x": 0.49708980321884155,
+          "y": 0.5644004344940186,
+          "z": -0.011267374269664288,
+          "visibility": 0
+        },
+        {
+          "x": 0.4848903715610504,
+          "y": 0.5571137070655823,
+          "z": -0.008143194951117039,
+          "visibility": 0
+        },
+        {
+          "x": 0.4438440799713135,
+          "y": 0.5287183523178101,
+          "z": 0.0170430988073349,
+          "visibility": 0
+        },
+        {
+          "x": 0.5230751037597656,
+          "y": 0.4387688636779785,
+          "z": -0.012139681726694107,
+          "visibility": 0
+        },
+        {
+          "x": 0.5164519548416138,
+          "y": 0.4150746464729309,
+          "z": 0.007860383950173855,
+          "visibility": 0
+        },
+        {
+          "x": 0.5092666149139404,
+          "y": 0.41821935772895813,
+          "z": 0.012066680938005447,
+          "visibility": 0
+        },
+        {
+          "x": 0.5036866068840027,
+          "y": 0.5668806433677673,
+          "z": -0.010857067070901394,
+          "visibility": 0
+        },
+        {
+          "x": 0.44144874811172485,
+          "y": 0.566426694393158,
+          "z": 0.029447445645928383,
+          "visibility": 0
+        },
+        {
+          "x": 0.5269337892532349,
+          "y": 0.41330769658088684,
+          "z": -0.006122061982750893,
+          "visibility": 0
+        },
+        {
+          "x": 0.5055068731307983,
+          "y": 0.6148576736450195,
+          "z": -0.015065406449139118,
+          "visibility": 0
+        },
+        {
+          "x": 0.540042519569397,
+          "y": 0.4536820948123932,
+          "z": -0.042931266129016876,
+          "visibility": 0
+        },
+        {
+          "x": 0.5304687023162842,
+          "y": 0.4432635009288788,
+          "z": -0.029426682740449905,
+          "visibility": 0
+        },
+        {
+          "x": 0.5401397943496704,
+          "y": 0.4404214918613434,
+          "z": -0.03192787989974022,
+          "visibility": 0
+        },
+        {
+          "x": 0.5148988366127014,
+          "y": 0.47361037135124207,
+          "z": -0.024021249264478683,
+          "visibility": 0
+        },
+        {
+          "x": 0.5389984250068665,
+          "y": 0.6418238878250122,
+          "z": -0.02556515671312809,
+          "visibility": 0
+        },
+        {
+          "x": 0.5394067764282227,
+          "y": 0.6211870908737183,
+          "z": -0.023730328306555748,
+          "visibility": 0
+        },
+        {
+          "x": 0.5224869251251221,
+          "y": 0.620158851146698,
+          "z": -0.02158055268228054,
+          "visibility": 0
+        },
+        {
+          "x": 0.479403018951416,
+          "y": 0.5917862057685852,
+          "z": -0.0003720482054632157,
+          "visibility": 0
+        },
+        {
+          "x": 0.4925207495689392,
+          "y": 0.5128170251846313,
+          "z": -0.007725168950855732,
+          "visibility": 0
+        },
+        {
+          "x": 0.4915861487388611,
+          "y": 0.6055504679679871,
+          "z": -0.007841226644814014,
+          "visibility": 0
+        },
+        {
+          "x": 0.46853065490722656,
+          "y": 0.5117815136909485,
+          "z": -0.00294597540050745,
+          "visibility": 0
+        },
+        {
+          "x": 0.4826872944831848,
+          "y": 0.5275070071220398,
+          "z": -0.007459024898707867,
+          "visibility": 0
+        },
+        {
+          "x": 0.45823875069618225,
+          "y": 0.5370000004768372,
+          "z": 0.0038471973966807127,
+          "visibility": 0
+        },
+        {
+          "x": 0.518408477306366,
+          "y": 0.6404260993003845,
+          "z": -0.02217484451830387,
+          "visibility": 0
+        },
+        {
+          "x": 0.5078779458999634,
+          "y": 0.482609361410141,
+          "z": -0.017037367448210716,
+          "visibility": 0
+        },
+        {
+          "x": 0.46960633993148804,
+          "y": 0.6056578755378723,
+          "z": 0.008621943183243275,
+          "visibility": 0
+        },
+        {
+          "x": 0.48478007316589355,
+          "y": 0.6207314729690552,
+          "z": -0.0005934556829743087,
+          "visibility": 0
+        },
+        {
+          "x": 0.4696516990661621,
+          "y": 0.5752299427986145,
+          "z": 0.0034176320768892765,
+          "visibility": 0
+        },
+        {
+          "x": 0.4311423897743225,
+          "y": 0.5513878464698792,
+          "z": 0.040360115468502045,
+          "visibility": 0
+        },
+        {
+          "x": 0.4555087983608246,
+          "y": 0.5797305703163147,
+          "z": 0.013914575800299644,
+          "visibility": 0
+        },
+        {
+          "x": 0.4243660867214203,
+          "y": 0.567497968673706,
+          "z": 0.06366020441055298,
+          "visibility": 0
+        },
+        {
+          "x": 0.47349652647972107,
+          "y": 0.5473838448524475,
+          "z": -0.0033956733532249928,
+          "visibility": 0
+        },
+        {
+          "x": 0.5158640742301941,
+          "y": 0.4616575837135315,
+          "z": -0.015795623883605003,
+          "visibility": 0
+        },
+        {
+          "x": 0.5147693157196045,
+          "y": 0.4989211857318878,
+          "z": -0.04167090356349945,
+          "visibility": 0
+        },
+        {
+          "x": 0.5071778893470764,
+          "y": 0.5036650896072388,
+          "z": -0.030635640025138855,
+          "visibility": 0
+        },
+        {
+          "x": 0.519883930683136,
+          "y": 0.48874884843826294,
+          "z": -0.04880731552839279,
+          "visibility": 0
+        },
+        {
+          "x": 0.5078644156455994,
+          "y": 0.4010586738586426,
+          "z": 0.00526422169059515,
+          "visibility": 0
+        },
+        {
+          "x": 0.4903112053871155,
+          "y": 0.390886127948761,
+          "z": 0.0039006471633911133,
+          "visibility": 0
+        },
+        {
+          "x": 0.47532758116722107,
+          "y": 0.38877519965171814,
+          "z": 0.004755224566906691,
+          "visibility": 0
+        },
+        {
+          "x": 0.46268051862716675,
+          "y": 0.3928768038749695,
+          "z": 0.009326819330453873,
+          "visibility": 0
+        },
+        {
+          "x": 0.45388302206993103,
+          "y": 0.40122488141059875,
+          "z": 0.016010403633117676,
+          "visibility": 0
+        },
+        {
+          "x": 0.44822707772254944,
+          "y": 0.4297884702682495,
+          "z": 0.03159385174512863,
+          "visibility": 0
+        },
+        {
+          "x": 0.4165929853916168,
+          "y": 0.47326746582984924,
+          "z": 0.07708051055669785,
+          "visibility": 0
+        },
+        {
+          "x": 0.457246869802475,
+          "y": 0.4490564167499542,
+          "z": 0.021597743034362793,
+          "visibility": 0
+        },
+        {
+          "x": 0.4681588113307953,
+          "y": 0.45257681608200073,
+          "z": 0.014658339321613312,
+          "visibility": 0
+        },
+        {
+          "x": 0.48205405473709106,
+          "y": 0.45269954204559326,
+          "z": 0.00993744470179081,
+          "visibility": 0
+        },
+        {
+          "x": 0.49532049894332886,
+          "y": 0.4492267370223999,
+          "z": 0.0077958134934306145,
+          "visibility": 0
+        },
+        {
+          "x": 0.5055698752403259,
+          "y": 0.4436718225479126,
+          "z": 0.007724327500909567,
+          "visibility": 0
+        },
+        {
+          "x": 0.5126322507858276,
+          "y": 0.4385436475276947,
+          "z": 0.007259293459355831,
+          "visibility": 0
+        },
+        {
+          "x": 0.4155448079109192,
+          "y": 0.4778572916984558,
+          "z": 0.1170579195022583,
+          "visibility": 0
+        },
+        {
+          "x": 0.5075199604034424,
+          "y": 0.5080919861793518,
+          "z": -0.025634337216615677,
+          "visibility": 0
+        },
+        {
+          "x": 0.522716760635376,
+          "y": 0.4631780683994293,
+          "z": -0.03192076459527016,
+          "visibility": 0
+        },
+        {
+          "x": 0.5227019786834717,
+          "y": 0.4988856613636017,
+          "z": -0.050190944224596024,
+          "visibility": 0
+        },
+        {
+          "x": 0.5288140773773193,
+          "y": 0.5070415735244751,
+          "z": -0.04677961766719818,
+          "visibility": 0
+        },
+        {
+          "x": 0.5227653980255127,
+          "y": 0.5018507242202759,
+          "z": -0.04523896053433418,
+          "visibility": 0
+        },
+        {
+          "x": 0.5104933977127075,
+          "y": 0.513175368309021,
+          "z": -0.022632237523794174,
+          "visibility": 0
+        },
+        {
+          "x": 0.5304651856422424,
+          "y": 0.5079708695411682,
+          "z": -0.04961065202951431,
+          "visibility": 0
+        },
+        {
+          "x": 0.5316600203514099,
+          "y": 0.5118318796157837,
+          "z": -0.037643514573574066,
+          "visibility": 0
+        },
+        {
+          "x": 0.5115251541137695,
+          "y": 0.42817115783691406,
+          "z": 0.013215174898505211,
+          "visibility": 0
+        },
+        {
+          "x": 0.5181882381439209,
+          "y": 0.4298606812953949,
+          "z": 0.006680958904325962,
+          "visibility": 0
+        },
+        {
+          "x": 0.5222632884979248,
+          "y": 0.430923730134964,
+          "z": -0.001218072371557355,
+          "visibility": 0
+        },
+        {
+          "x": 0.462362676858902,
+          "y": 0.42289501428604126,
+          "z": 0.02047528326511383,
+          "visibility": 0
+        },
+        {
+          "x": 0.45521292090415955,
+          "y": 0.415463387966156,
+          "z": 0.02119167521595955,
+          "visibility": 0
+        },
+        {
+          "x": 0.5491091012954712,
+          "y": 0.45620766282081604,
+          "z": -0.039382681250572205,
+          "visibility": 0
+        },
+        {
+          "x": 0.6201138496398926,
+          "y": 0.4301583170890808,
+          "z": 0.01926339603960514,
+          "visibility": 0
+        },
+        {
+          "x": 0.549800455570221,
+          "y": 0.5104230642318726,
+          "z": -0.03777212277054787,
+          "visibility": 0
+        },
+        {
+          "x": 0.6624433398246765,
+          "y": 0.37777650356292725,
+          "z": 0.07503099739551544,
+          "visibility": 0
+        },
+        {
+          "x": 0.5887314677238464,
+          "y": 0.44234487414360046,
+          "z": 0.007272726856172085,
+          "visibility": 0
+        },
+        {
+          "x": 0.5993822813034058,
+          "y": 0.44403764605522156,
+          "z": 0.00800216943025589,
+          "visibility": 0
+        },
+        {
+          "x": 0.6100537180900574,
+          "y": 0.4430897533893585,
+          "z": 0.011119055561721325,
+          "visibility": 0
+        },
+        {
+          "x": 0.6237587928771973,
+          "y": 0.4348684847354889,
+          "z": 0.020535457879304886,
+          "visibility": 0
+        },
+        {
+          "x": 0.5798488855361938,
+          "y": 0.43805012106895447,
+          "z": 0.008929463103413582,
+          "visibility": 0
+        },
+        {
+          "x": 0.6049150228500366,
+          "y": 0.3972967267036438,
+          "z": 0.005352456588298082,
+          "visibility": 0
+        },
+        {
+          "x": 0.5929362177848816,
+          "y": 0.39940884709358215,
+          "z": 0.00563332112506032,
+          "visibility": 0
+        },
+        {
+          "x": 0.6163436770439148,
+          "y": 0.4003116190433502,
+          "z": 0.008770568296313286,
+          "visibility": 0
+        },
+        {
+          "x": 0.623968243598938,
+          "y": 0.40678369998931885,
+          "z": 0.012951339595019817,
+          "visibility": 0
+        },
+        {
+          "x": 0.6319963932037354,
+          "y": 0.4437001943588257,
+          "z": 0.02550119161605835,
+          "visibility": 0
+        },
+        {
+          "x": 0.5789443254470825,
+          "y": 0.632553219795227,
+          "z": -0.01250484399497509,
+          "visibility": 0
+        },
+        {
+          "x": 0.6236851811408997,
+          "y": 0.42524078488349915,
+          "z": 0.02297893539071083,
+          "visibility": 0
+        },
+        {
+          "x": 0.6657932996749878,
+          "y": 0.4416741132736206,
+          "z": 0.07417963445186615,
+          "visibility": 0
+        },
+        {
+          "x": 0.6450656652450562,
+          "y": 0.43471822142601013,
+          "z": 0.03732505813241005,
+          "visibility": 0
+        },
+        {
+          "x": 0.594718337059021,
+          "y": 0.495392382144928,
+          "z": -0.007151670753955841,
+          "visibility": 0
+        },
+        {
+          "x": 0.5531264543533325,
+          "y": 0.5470784306526184,
+          "z": -0.032854415476322174,
+          "visibility": 0
+        },
+        {
+          "x": 0.5513015985488892,
+          "y": 0.5600901246070862,
+          "z": -0.02858777344226837,
+          "visibility": 0
+        },
+        {
+          "x": 0.5663167834281921,
+          "y": 0.553449809551239,
+          "z": -0.027379030361771584,
+          "visibility": 0
+        },
+        {
+          "x": 0.5747054815292358,
+          "y": 0.5599702596664429,
+          "z": -0.02044338546693325,
+          "visibility": 0
+        },
+        {
+          "x": 0.5618458986282349,
+          "y": 0.5624811053276062,
+          "z": -0.02480069361627102,
+          "visibility": 0
+        },
+        {
+          "x": 0.5699230432510376,
+          "y": 0.5648892521858215,
+          "z": -0.01841597445309162,
+          "visibility": 0
+        },
+        {
+          "x": 0.5885399580001831,
+          "y": 0.5838473439216614,
+          "z": -0.007641267031431198,
+          "visibility": 0
+        },
+        {
+          "x": 0.5486830472946167,
+          "y": 0.5008247494697571,
+          "z": -0.05583822727203369,
+          "visibility": 0
+        },
+        {
+          "x": 0.5500595569610596,
+          "y": 0.4866989254951477,
+          "z": -0.05818716809153557,
+          "visibility": 0
+        },
+        {
+          "x": 0.6387304067611694,
+          "y": 0.3942853808403015,
+          "z": 0.0174619909375906,
+          "visibility": 0
+        },
+        {
+          "x": 0.5728223919868469,
+          "y": 0.4599131941795349,
+          "z": -0.005485539324581623,
+          "visibility": 0
+        },
+        {
+          "x": 0.5758091807365417,
+          "y": 0.5002243518829346,
+          "z": -0.029823651537299156,
+          "visibility": 0
+        },
+        {
+          "x": 0.5760379433631897,
+          "y": 0.4933273494243622,
+          "z": -0.026215190067887306,
+          "visibility": 0
+        },
+        {
+          "x": 0.6278663873672485,
+          "y": 0.49548593163490295,
+          "z": 0.006612463854253292,
+          "visibility": 0
+        },
+        {
+          "x": 0.5493640899658203,
+          "y": 0.46970874071121216,
+          "z": -0.05068287253379822,
+          "visibility": 0
+        },
+        {
+          "x": 0.6133701801300049,
+          "y": 0.3751230835914612,
+          "z": -0.00030119362054392695,
+          "visibility": 0
+        },
+        {
+          "x": 0.6284953355789185,
+          "y": 0.3821335434913635,
+          "z": 0.007973132655024529,
+          "visibility": 0
+        },
+        {
+          "x": 0.651861846446991,
+          "y": 0.3495944142341614,
+          "z": 0.055648695677518845,
+          "visibility": 0
+        },
+        {
+          "x": 0.56479412317276,
+          "y": 0.38880300521850586,
+          "z": -0.009724622592329979,
+          "visibility": 0
+        },
+        {
+          "x": 0.5828220248222351,
+          "y": 0.4059184491634369,
+          "z": 0.008687524124979973,
+          "visibility": 0
+        },
+        {
+          "x": 0.5982066988945007,
+          "y": 0.5719209313392639,
+          "z": -0.0032808822579681873,
+          "visibility": 0
+        },
+        {
+          "x": 0.6565981507301331,
+          "y": 0.5850955843925476,
+          "z": 0.08813787251710892,
+          "visibility": 0
+        },
+        {
+          "x": 0.5672923922538757,
+          "y": 0.5083964467048645,
+          "z": -0.026334527879953384,
+          "visibility": 0
+        },
+        {
+          "x": 0.557892918586731,
+          "y": 0.5122209787368774,
+          "z": -0.02794632688164711,
+          "visibility": 0
+        },
+        {
+          "x": 0.5835829973220825,
+          "y": 0.5715809464454651,
+          "z": -0.004674234427511692,
+          "visibility": 0
+        },
+        {
+          "x": 0.5808642506599426,
+          "y": 0.5705488920211792,
+          "z": -0.00785730592906475,
+          "visibility": 0
+        },
+        {
+          "x": 0.6349174380302429,
+          "y": 0.3729661703109741,
+          "z": 0.014184740372002125,
+          "visibility": 0
+        },
+        {
+          "x": 0.5764221549034119,
+          "y": 0.5069207549095154,
+          "z": -0.02458045445382595,
+          "visibility": 0
+        },
+        {
+          "x": 0.5926684141159058,
+          "y": 0.37645843625068665,
+          "z": -0.006260749883949757,
+          "visibility": 0
+        },
+        {
+          "x": 0.5949597954750061,
+          "y": 0.3638218641281128,
+          "z": -0.007321407552808523,
+          "visibility": 0
+        },
+        {
+          "x": 0.605887770652771,
+          "y": 0.31202173233032227,
+          "z": 0.016634395346045494,
+          "visibility": 0
+        },
+        {
+          "x": 0.6429414749145508,
+          "y": 0.3615242540836334,
+          "z": 0.03189112991094589,
+          "visibility": 0
+        },
+        {
+          "x": 0.5992531776428223,
+          "y": 0.33772924542427063,
+          "z": 0.004061990417540073,
+          "visibility": 0
+        },
+        {
+          "x": 0.64542555809021,
+          "y": 0.38893309235572815,
+          "z": 0.02732766792178154,
+          "visibility": 0
+        },
+        {
+          "x": 0.6540089845657349,
+          "y": 0.3844880163669586,
+          "z": 0.04969564825296402,
+          "visibility": 0
+        },
+        {
+          "x": 0.552512526512146,
+          "y": 0.5541059374809265,
+          "z": -0.03197420388460159,
+          "visibility": 0
+        },
+        {
+          "x": 0.5640543103218079,
+          "y": 0.55827397108078,
+          "z": -0.02666012942790985,
+          "visibility": 0
+        },
+        {
+          "x": 0.5724018216133118,
+          "y": 0.5626041889190674,
+          "z": -0.020441073924303055,
+          "visibility": 0
+        },
+        {
+          "x": 0.5649890303611755,
+          "y": 0.5109879970550537,
+          "z": -0.024289961904287338,
+          "visibility": 0
+        },
+        {
+          "x": 0.5825781226158142,
+          "y": 0.5710009932518005,
+          "z": -0.006368604954332113,
+          "visibility": 0
+        },
+        {
+          "x": 0.5770794749259949,
+          "y": 0.5718111395835876,
+          "z": -0.013673310168087482,
+          "visibility": 0
+        },
+        {
+          "x": 0.5794309377670288,
+          "y": 0.5701817274093628,
+          "z": -0.00814078003168106,
+          "visibility": 0
+        },
+        {
+          "x": 0.5612399578094482,
+          "y": 0.5020221471786499,
+          "z": -0.04038694128394127,
+          "visibility": 0
+        },
+        {
+          "x": 0.567840039730072,
+          "y": 0.5664291977882385,
+          "z": -0.016658801585435867,
+          "visibility": 0
+        },
+        {
+          "x": 0.5600694417953491,
+          "y": 0.564752995967865,
+          "z": -0.020703038200736046,
+          "visibility": 0
+        },
+        {
+          "x": 0.5501571893692017,
+          "y": 0.5640352368354797,
+          "z": -0.02412528730928898,
+          "visibility": 0
+        },
+        {
+          "x": 0.5528227090835571,
+          "y": 0.601679801940918,
+          "z": -0.022083358839154243,
+          "visibility": 0
+        },
+        {
+          "x": 0.5509957075119019,
+          "y": 0.579888105392456,
+          "z": -0.028902316465973854,
+          "visibility": 0
+        },
+        {
+          "x": 0.5508463382720947,
+          "y": 0.5738007426261902,
+          "z": -0.028651515021920204,
+          "visibility": 0
+        },
+        {
+          "x": 0.5507588982582092,
+          "y": 0.5682176947593689,
+          "z": -0.025128265842795372,
+          "visibility": 0
+        },
+        {
+          "x": 0.5501149892807007,
+          "y": 0.5644713044166565,
+          "z": -0.02323053404688835,
+          "visibility": 0
+        },
+        {
+          "x": 0.5679226517677307,
+          "y": 0.5668038725852966,
+          "z": -0.01656578853726387,
+          "visibility": 0
+        },
+        {
+          "x": 0.5692857503890991,
+          "y": 0.5690344572067261,
+          "z": -0.018729496747255325,
+          "visibility": 0
+        },
+        {
+          "x": 0.5706896185874939,
+          "y": 0.5725151300430298,
+          "z": -0.021189559251070023,
+          "visibility": 0
+        },
+        {
+          "x": 0.5720930695533752,
+          "y": 0.5758299231529236,
+          "z": -0.02007945068180561,
+          "visibility": 0
+        },
+        {
+          "x": 0.586727499961853,
+          "y": 0.5457160472869873,
+          "z": -0.01645939238369465,
+          "visibility": 0
+        },
+        {
+          "x": 0.667357325553894,
+          "y": 0.5138487815856934,
+          "z": 0.11171959340572357,
+          "visibility": 0
+        },
+        {
+          "x": 0.5736889243125916,
+          "y": 0.5684158802032471,
+          "z": -0.012154395692050457,
+          "visibility": 0
+        },
+        {
+          "x": 0.5749934911727905,
+          "y": 0.5703039169311523,
+          "z": -0.013489477336406708,
+          "visibility": 0
+        },
+        {
+          "x": 0.554351806640625,
+          "y": 0.517556369304657,
+          "z": -0.029295003041625023,
+          "visibility": 0
+        },
+        {
+          "x": 0.5724180936813354,
+          "y": 0.5161492824554443,
+          "z": -0.017793122678995132,
+          "visibility": 0
+        },
+        {
+          "x": 0.5559476613998413,
+          "y": 0.5153045654296875,
+          "z": -0.028724873438477516,
+          "visibility": 0
+        },
+        {
+          "x": 0.5842293500900269,
+          "y": 0.4688400626182556,
+          "z": -0.00272030895575881,
+          "visibility": 0
+        },
+        {
+          "x": 0.6019525527954102,
+          "y": 0.4782876670360565,
+          "z": -0.0002851106983143836,
+          "visibility": 0
+        },
+        {
+          "x": 0.5781102180480957,
+          "y": 0.5002031922340393,
+          "z": -0.020724590867757797,
+          "visibility": 0
+        },
+        {
+          "x": 0.633907675743103,
+          "y": 0.3270355463027954,
+          "z": 0.03470434993505478,
+          "visibility": 0
+        },
+        {
+          "x": 0.6256608366966248,
+          "y": 0.3452957272529602,
+          "z": 0.017020244151353836,
+          "visibility": 0
+        },
+        {
+          "x": 0.6178141236305237,
+          "y": 0.3636050820350647,
+          "z": 0.002809588797390461,
+          "visibility": 0
+        },
+        {
+          "x": 0.5789533853530884,
+          "y": 0.5907400250434875,
+          "z": -0.01417329628020525,
+          "visibility": 0
+        },
+        {
+          "x": 0.5685147047042847,
+          "y": 0.3684658110141754,
+          "z": -0.012412374839186668,
+          "visibility": 0
+        },
+        {
+          "x": 0.5718063116073608,
+          "y": 0.336778849363327,
+          "z": -0.003404041053727269,
+          "visibility": 0
+        },
+        {
+          "x": 0.5758360624313354,
+          "y": 0.304841548204422,
+          "z": 0.006393809802830219,
+          "visibility": 0
+        },
+        {
+          "x": 0.6189841032028198,
+          "y": 0.44040361046791077,
+          "z": 0.015974007546901703,
+          "visibility": 0
+        },
+        {
+          "x": 0.6432893872261047,
+          "y": 0.4543037414550781,
+          "z": 0.031166527420282364,
+          "visibility": 0
+        },
+        {
+          "x": 0.5748081803321838,
+          "y": 0.4338330626487732,
+          "z": 0.010754087939858437,
+          "visibility": 0
+        },
+        {
+          "x": 0.6343145966529846,
+          "y": 0.4147680997848511,
+          "z": 0.02221081405878067,
+          "visibility": 0
+        },
+        {
+          "x": 0.565072774887085,
+          "y": 0.44999393820762634,
+          "z": -0.00866740383207798,
+          "visibility": 0
+        },
+        {
+          "x": 0.5681713819503784,
+          "y": 0.49403271079063416,
+          "z": -0.03968580812215805,
+          "visibility": 0
+        },
+        {
+          "x": 0.655632734298706,
+          "y": 0.4660077393054962,
+          "z": 0.04205949977040291,
+          "visibility": 0
+        },
+        {
+          "x": 0.6353468894958496,
+          "y": 0.4626701772212982,
+          "z": 0.020370904356241226,
+          "visibility": 0
+        },
+        {
+          "x": 0.6211529970169067,
+          "y": 0.46640875935554504,
+          "z": 0.009947387501597404,
+          "visibility": 0
+        },
+        {
+          "x": 0.6008079648017883,
+          "y": 0.46398022770881653,
+          "z": 0.0053541711531579494,
+          "visibility": 0
+        },
+        {
+          "x": 0.5855991244316101,
+          "y": 0.45819661021232605,
+          "z": 0.0033426587469875813,
+          "visibility": 0
+        },
+        {
+          "x": 0.5740846395492554,
+          "y": 0.4508516490459442,
+          "z": 0.001163021894171834,
+          "visibility": 0
+        },
+        {
+          "x": 0.5508164167404175,
+          "y": 0.4303012192249298,
+          "z": -0.018354099243879318,
+          "visibility": 0
+        },
+        {
+          "x": 0.6541556119918823,
+          "y": 0.4961169958114624,
+          "z": 0.03658205270767212,
+          "visibility": 0
+        },
+        {
+          "x": 0.6426409482955933,
+          "y": 0.41346022486686707,
+          "z": 0.027672123163938522,
+          "visibility": 0
+        },
+        {
+          "x": 0.545022189617157,
+          "y": 0.5084500312805176,
+          "z": -0.051283128559589386,
+          "visibility": 0
+        },
+        {
+          "x": 0.5720503330230713,
+          "y": 0.4730808138847351,
+          "z": -0.011015095748007298,
+          "visibility": 0
+        },
+        {
+          "x": 0.6688235998153687,
+          "y": 0.4444540739059448,
+          "z": 0.11016149818897247,
+          "visibility": 0
+        },
+        {
+          "x": 0.5657492876052856,
+          "y": 0.4424104392528534,
+          "z": 0.00034681911347433925,
+          "visibility": 0
+        },
+        {
+          "x": 0.5788903832435608,
+          "y": 0.5021790862083435,
+          "z": -0.010267800651490688,
+          "visibility": 0
+        },
+        {
+          "x": 0.6281436085700989,
+          "y": 0.4258672297000885,
+          "z": 0.025043806061148643,
+          "visibility": 0
+        },
+        {
+          "x": 0.5686289668083191,
+          "y": 0.48546117544174194,
+          "z": -0.03510192036628723,
+          "visibility": 0
+        },
+        {
+          "x": 0.6648708581924438,
+          "y": 0.549528181552887,
+          "z": 0.1029617190361023,
+          "visibility": 0
+        },
+        {
+          "x": 0.5753027200698853,
+          "y": 0.4293280243873596,
+          "z": 0.013908770866692066,
+          "visibility": 0
+        },
+        {
+          "x": 0.5590065717697144,
+          "y": 0.4759364426136017,
+          "z": -0.04475725442171097,
+          "visibility": 0
+        },
+        {
+          "x": 0.6308360695838928,
+          "y": 0.6088277101516724,
+          "z": 0.02937915548682213,
+          "visibility": 0
+        },
+        {
+          "x": 0.6300307512283325,
+          "y": 0.6293862462043762,
+          "z": 0.046195436269044876,
+          "visibility": 0
+        },
+        {
+          "x": 0.6661202907562256,
+          "y": 0.5054426193237305,
+          "z": 0.0742708370089531,
+          "visibility": 0
+        },
+        {
+          "x": 0.6454230546951294,
+          "y": 0.5919008255004883,
+          "z": 0.04446418583393097,
+          "visibility": 0
+        },
+        {
+          "x": 0.6602542996406555,
+          "y": 0.4109596312046051,
+          "z": 0.06534118205308914,
+          "visibility": 0
+        },
+        {
+          "x": 0.5823912024497986,
+          "y": 0.6509389281272888,
+          "z": -0.007759764790534973,
+          "visibility": 0
+        },
+        {
+          "x": 0.5438264012336731,
+          "y": 0.5130884647369385,
+          "z": -0.03788232058286667,
+          "visibility": 0
+        },
+        {
+          "x": 0.5817037224769592,
+          "y": 0.48451387882232666,
+          "z": -0.008064370602369308,
+          "visibility": 0
+        },
+        {
+          "x": 0.6544782519340515,
+          "y": 0.4383280575275421,
+          "z": 0.04800442233681679,
+          "visibility": 0
+        },
+        {
+          "x": 0.6093619465827942,
+          "y": 0.43561094999313354,
+          "z": 0.012408227659761906,
+          "visibility": 0
+        },
+        {
+          "x": 0.6001088619232178,
+          "y": 0.4365885555744171,
+          "z": 0.009710177779197693,
+          "visibility": 0
+        },
+        {
+          "x": 0.5788254141807556,
+          "y": 0.5739625692367554,
+          "z": -0.012143046595156193,
+          "visibility": 0
+        },
+        {
+          "x": 0.6532326936721802,
+          "y": 0.5261759161949158,
+          "z": 0.03681640699505806,
+          "visibility": 0
+        },
+        {
+          "x": 0.5619655847549438,
+          "y": 0.6735528707504272,
+          "z": -0.006842190865427256,
+          "visibility": 0
+        },
+        {
+          "x": 0.5967168211936951,
+          "y": 0.6573229432106018,
+          "z": 0.01573684625327587,
+          "visibility": 0
+        },
+        {
+          "x": 0.6123260259628296,
+          "y": 0.6459805369377136,
+          "z": 0.02907065488398075,
+          "visibility": 0
+        },
+        {
+          "x": 0.5906853675842285,
+          "y": 0.4353352189064026,
+          "z": 0.009371781721711159,
+          "visibility": 0
+        },
+        {
+          "x": 0.5829071402549744,
+          "y": 0.432865709066391,
+          "z": 0.011076626367866993,
+          "visibility": 0
+        },
+        {
+          "x": 0.5780214071273804,
+          "y": 0.4308701455593109,
+          "z": 0.013592252507805824,
+          "visibility": 0
+        },
+        {
+          "x": 0.6510124206542969,
+          "y": 0.4115622639656067,
+          "z": 0.038867831230163574,
+          "visibility": 0
+        },
+        {
+          "x": 0.584445595741272,
+          "y": 0.4189334809780121,
+          "z": 0.01028876006603241,
+          "visibility": 0
+        },
+        {
+          "x": 0.5932788252830505,
+          "y": 0.4143412709236145,
+          "z": 0.008627078495919704,
+          "visibility": 0
+        },
+        {
+          "x": 0.6024578213691711,
+          "y": 0.4129490256309509,
+          "z": 0.009053436107933521,
+          "visibility": 0
+        },
+        {
+          "x": 0.6112973093986511,
+          "y": 0.4147551655769348,
+          "z": 0.011595050804316998,
+          "visibility": 0
+        },
+        {
+          "x": 0.6174607872962952,
+          "y": 0.4185647666454315,
+          "z": 0.01485866867005825,
+          "visibility": 0
+        },
+        {
+          "x": 0.6674611568450928,
+          "y": 0.4075847268104553,
+          "z": 0.09575268626213074,
+          "visibility": 0
+        },
+        {
+          "x": 0.6157428026199341,
+          "y": 0.4332268536090851,
+          "z": 0.016109468415379524,
+          "visibility": 0
+        },
+        {
+          "x": 0.5764437317848206,
+          "y": 0.536696195602417,
+          "z": -0.02123948559165001,
+          "visibility": 0
+        },
+        {
+          "x": 0.5672445297241211,
+          "y": 0.5054718852043152,
+          "z": -0.02983916737139225,
+          "visibility": 0
+        },
+        {
+          "x": 0.5552520751953125,
+          "y": 0.5295464396476746,
+          "z": -0.029954973608255386,
+          "visibility": 0
+        },
+        {
+          "x": 0.6146309971809387,
+          "y": 0.6256030201911926,
+          "z": 0.017073728144168854,
+          "visibility": 0
+        },
+        {
+          "x": 0.5989848375320435,
+          "y": 0.6387602686882019,
+          "z": 0.005063981749117374,
+          "visibility": 0
+        },
+        {
+          "x": 0.5620126128196716,
+          "y": 0.6586883664131165,
+          "z": -0.018753420561552048,
+          "visibility": 0
+        },
+        {
+          "x": 0.6441529393196106,
+          "y": 0.6114455461502075,
+          "z": 0.0676158219575882,
+          "visibility": 0
+        },
+        {
+          "x": 0.5783153772354126,
+          "y": 0.42478951811790466,
+          "z": 0.012442754581570625,
+          "visibility": 0
+        },
+        {
+          "x": 0.5575178861618042,
+          "y": 0.4519583284854889,
+          "z": -0.02321821078658104,
+          "visibility": 0
+        },
+        {
+          "x": 0.5804672837257385,
+          "y": 0.6665868163108826,
+          "z": 0.002232746919617057,
+          "visibility": 0
+        },
+        {
+          "x": 0.6634640693664551,
+          "y": 0.5389053225517273,
+          "z": 0.06906277686357498,
+          "visibility": 0
+        },
+        {
+          "x": 0.5601696968078613,
+          "y": 0.5651150941848755,
+          "z": -0.020252734422683716,
+          "visibility": 0
+        },
+        {
+          "x": 0.5609300136566162,
+          "y": 0.568620502948761,
+          "z": -0.022409750148653984,
+          "visibility": 0
+        },
+        {
+          "x": 0.562006413936615,
+          "y": 0.5732749700546265,
+          "z": -0.025591790676116943,
+          "visibility": 0
+        },
+        {
+          "x": 0.5625914335250854,
+          "y": 0.5783398151397705,
+          "z": -0.025409594178199768,
+          "visibility": 0
+        },
+        {
+          "x": 0.5673671960830688,
+          "y": 0.5973842740058899,
+          "z": -0.019791238009929657,
+          "visibility": 0
+        },
+        {
+          "x": 0.5761240720748901,
+          "y": 0.5679636001586914,
+          "z": -0.012795811519026756,
+          "visibility": 0
+        },
+        {
+          "x": 0.5781413316726685,
+          "y": 0.5671153664588928,
+          "z": -0.012679269537329674,
+          "visibility": 0
+        },
+        {
+          "x": 0.5803414583206177,
+          "y": 0.5662635564804077,
+          "z": -0.01248387061059475,
+          "visibility": 0
+        },
+        {
+          "x": 0.5946590900421143,
+          "y": 0.5581812262535095,
+          "z": -0.009579344652593136,
+          "visibility": 0
+        },
+        {
+          "x": 0.6383147239685059,
+          "y": 0.529373824596405,
+          "z": 0.014947262592613697,
+          "visibility": 0
+        },
+        {
+          "x": 0.5576428771018982,
+          "y": 0.4390738904476166,
+          "z": -0.012585094198584557,
+          "visibility": 0
+        },
+        {
+          "x": 0.5656946897506714,
+          "y": 0.41518309712409973,
+          "z": 0.007079244591295719,
+          "visibility": 0
+        },
+        {
+          "x": 0.5733568668365479,
+          "y": 0.41850176453590393,
+          "z": 0.010994323529303074,
+          "visibility": 0
+        },
+        {
+          "x": 0.5734218955039978,
+          "y": 0.5681458711624146,
+          "z": -0.011925926432013512,
+          "visibility": 0
+        },
+        {
+          "x": 0.6402820944786072,
+          "y": 0.5673567652702332,
+          "z": 0.027225300669670105,
+          "visibility": 0
+        },
+        {
+          "x": 0.5547071099281311,
+          "y": 0.41333290934562683,
+          "z": -0.006664489861577749,
+          "visibility": 0
+        },
+        {
+          "x": 0.5734193921089172,
+          "y": 0.6147438287734985,
+          "z": -0.016009975224733353,
+          "visibility": 0
+        },
+        {
+          "x": 0.5500307679176331,
+          "y": 0.4436853229999542,
+          "z": -0.029685014858841896,
+          "visibility": 0
+        },
+        {
+          "x": 0.5650984048843384,
+          "y": 0.47403210401535034,
+          "z": -0.0245788786560297,
+          "visibility": 0
+        },
+        {
+          "x": 0.5561220645904541,
+          "y": 0.6205528974533081,
+          "z": -0.022056087851524353,
+          "visibility": 0
+        },
+        {
+          "x": 0.6003702282905579,
+          "y": 0.5922543406486511,
+          "z": -0.0019263072172179818,
+          "visibility": 0
+        },
+        {
+          "x": 0.5873557329177856,
+          "y": 0.5135519504547119,
+          "z": -0.008904884569346905,
+          "visibility": 0
+        },
+        {
+          "x": 0.5877112746238708,
+          "y": 0.6054920554161072,
+          "z": -0.009149045683443546,
+          "visibility": 0
+        },
+        {
+          "x": 0.61294025182724,
+          "y": 0.512741208076477,
+          "z": -0.004585375543683767,
+          "visibility": 0
+        },
+        {
+          "x": 0.5979121327400208,
+          "y": 0.5283072590827942,
+          "z": -0.008881614543497562,
+          "visibility": 0
+        },
+        {
+          "x": 0.6232662200927734,
+          "y": 0.5376090407371521,
+          "z": 0.0019609215669333935,
+          "visibility": 0
+        },
+        {
+          "x": 0.5600250959396362,
+          "y": 0.6406611204147339,
+          "z": -0.022711370140314102,
+          "visibility": 0
+        },
+        {
+          "x": 0.5721850991249084,
+          "y": 0.48335689306259155,
+          "z": -0.0179413054138422,
+          "visibility": 0
+        },
+        {
+          "x": 0.6101429462432861,
+          "y": 0.6058081388473511,
+          "z": 0.00682316068559885,
+          "visibility": 0
+        },
+        {
+          "x": 0.5948415994644165,
+          "y": 0.6204290390014648,
+          "z": -0.002064742613583803,
+          "visibility": 0
+        },
+        {
+          "x": 0.6103750467300415,
+          "y": 0.5755279660224915,
+          "z": 0.0016524430830031633,
+          "visibility": 0
+        },
+        {
+          "x": 0.6509812474250793,
+          "y": 0.5517953634262085,
+          "z": 0.0379880927503109,
+          "visibility": 0
+        },
+        {
+          "x": 0.625697672367096,
+          "y": 0.5803054571151733,
+          "z": 0.011843808926641941,
+          "visibility": 0
+        },
+        {
+          "x": 0.6577682495117188,
+          "y": 0.568001925945282,
+          "z": 0.06111089140176773,
+          "visibility": 0
+        },
+        {
+          "x": 0.6069282293319702,
+          "y": 0.5482584834098816,
+          "z": -0.0049572838470339775,
+          "visibility": 0
+        },
+        {
+          "x": 0.5645264387130737,
+          "y": 0.46207714080810547,
+          "z": -0.016572298482060432,
+          "visibility": 0
+        },
+        {
+          "x": 0.5643124580383301,
+          "y": 0.4996539354324341,
+          "z": -0.04224921390414238,
+          "visibility": 0
+        },
+        {
+          "x": 0.5721684694290161,
+          "y": 0.5047343373298645,
+          "z": -0.031367432326078415,
+          "visibility": 0
+        },
+        {
+          "x": 0.559359073638916,
+          "y": 0.4891902506351471,
+          "z": -0.04924974963068962,
+          "visibility": 0
+        },
+        {
+          "x": 0.5747038722038269,
+          "y": 0.40101101994514465,
+          "z": 0.004148784093558788,
+          "visibility": 0
+        },
+        {
+          "x": 0.5925570726394653,
+          "y": 0.3906967341899872,
+          "z": 0.002431760774925351,
+          "visibility": 0
+        },
+        {
+          "x": 0.6079766154289246,
+          "y": 0.3890315592288971,
+          "z": 0.0028891011606901884,
+          "visibility": 0
+        },
+        {
+          "x": 0.6209521889686584,
+          "y": 0.3931240439414978,
+          "z": 0.007113681640475988,
+          "visibility": 0
+        },
+        {
+          "x": 0.6300000548362732,
+          "y": 0.40132763981819153,
+          "z": 0.013628849759697914,
+          "visibility": 0
+        },
+        {
+          "x": 0.6352328062057495,
+          "y": 0.4300016760826111,
+          "z": 0.02937501296401024,
+          "visibility": 0
+        },
+        {
+          "x": 0.6667653322219849,
+          "y": 0.47380104660987854,
+          "z": 0.07484972476959229,
+          "visibility": 0
+        },
+        {
+          "x": 0.6259396076202393,
+          "y": 0.44950583577156067,
+          "z": 0.019435850903391838,
+          "visibility": 0
+        },
+        {
+          "x": 0.6146619319915771,
+          "y": 0.4530171751976013,
+          "z": 0.01269510667771101,
+          "visibility": 0
+        },
+        {
+          "x": 0.6004155874252319,
+          "y": 0.45325252413749695,
+          "z": 0.008257763460278511,
+          "visibility": 0
+        },
+        {
+          "x": 0.5867594480514526,
+          "y": 0.44965511560440063,
+          "z": 0.006377344019711018,
+          "visibility": 0
+        },
+        {
+          "x": 0.5764626264572144,
+          "y": 0.4441010057926178,
+          "z": 0.006659927312284708,
+          "visibility": 0
+        },
+        {
+          "x": 0.5691077709197998,
+          "y": 0.4389629662036896,
+          "z": 0.006321617402136326,
+          "visibility": 0
+        },
+        {
+          "x": 0.667903482913971,
+          "y": 0.47911936044692993,
+          "z": 0.11489299684762955,
+          "visibility": 0
+        },
+        {
+          "x": 0.5721253156661987,
+          "y": 0.508843183517456,
+          "z": -0.02643091417849064,
+          "visibility": 0
+        },
+        {
+          "x": 0.5573052167892456,
+          "y": 0.46339789032936096,
+          "z": -0.032395120710134506,
+          "visibility": 0
+        },
+        {
+          "x": 0.5564095377922058,
+          "y": 0.49924570322036743,
+          "z": -0.050615470856428146,
+          "visibility": 0
+        },
+        {
+          "x": 0.5502015948295593,
+          "y": 0.5070870518684387,
+          "z": -0.046952709555625916,
+          "visibility": 0
+        },
+        {
+          "x": 0.5563048124313354,
+          "y": 0.5025907158851624,
+          "z": -0.04563730210065842,
+          "visibility": 0
+        },
+        {
+          "x": 0.5692504644393921,
+          "y": 0.5136478543281555,
+          "z": -0.02323315478861332,
+          "visibility": 0
+        },
+        {
+          "x": 0.5484591722488403,
+          "y": 0.5078167915344238,
+          "z": -0.04982500895857811,
+          "visibility": 0
+        },
+        {
+          "x": 0.5475258827209473,
+          "y": 0.5122579336166382,
+          "z": -0.03780888020992279,
+          "visibility": 0
+        },
+        {
+          "x": 0.570929765701294,
+          "y": 0.42875128984451294,
+          "z": 0.012338395230472088,
+          "visibility": 0
+        },
+        {
+          "x": 0.5636758208274841,
+          "y": 0.4303150773048401,
+          "z": 0.005903721787035465,
+          "visibility": 0
+        },
+        {
+          "x": 0.5595868825912476,
+          "y": 0.431210458278656,
+          "z": -0.0018092209938913584,
+          "visibility": 0
+        },
+        {
+          "x": 0.6209537982940674,
+          "y": 0.42198821902275085,
+          "z": 0.018427478149533272,
+          "visibility": 0
+        },
+        {
+          "x": 0.6287915706634521,
+          "y": 0.4154273569583893,
+          "z": 0.018970973789691925,
+          "visibility": 0
+        },
+        {
+          "x": 0.4811086654663086,
+          "y": 0.42539745569229126,
+          "z": 0.0027199736796319485,
+          "visibility": 0
+        },
+        {
+          "x": 0.49163931608200073,
+          "y": 0.425322562456131,
+          "z": 0.002704277168959379,
+          "visibility": 0
+        },
+        {
+          "x": 0.48108211159706116,
+          "y": 0.41323545575141907,
+          "z": 0.002713913796469569,
+          "visibility": 0
+        },
+        {
+          "x": 0.4706753194332123,
+          "y": 0.4253489077091217,
+          "z": 0.0027071076910942793,
+          "visibility": 0
+        },
+        {
+          "x": 0.48110947012901306,
+          "y": 0.4377482235431671,
+          "z": 0.002701760036870837,
+          "visibility": 0
+        },
+        {
+          "x": 0.6006954908370972,
+          "y": 0.42494162917137146,
+          "z": 0.00188541691750288,
+          "visibility": 0
+        },
+        {
+          "x": 0.6117699146270752,
+          "y": 0.4246644675731659,
+          "z": 0.001843902631662786,
+          "visibility": 0
+        },
+        {
+          "x": 0.6007091999053955,
+          "y": 0.41241973638534546,
+          "z": 0.0018439663108438253,
+          "visibility": 0
+        },
+        {
+          "x": 0.5897033214569092,
+          "y": 0.42480581998825073,
+          "z": 0.0018312784377485514,
+          "visibility": 0
+        },
+        {
+          "x": 0.600450873374939,
+          "y": 0.43731772899627686,
+          "z": 0.001833885908126831,
+          "visibility": 0
+        }
+      ],
+      "verification_status": "passed",
+      "last_verified_at": "2026-09-19T09:48:34.360Z",
+      "is_online": false,
+      "device_info": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+      "reference_locked": true,
+      "reference_registered_at": "2026-09-19T09:47:17.301Z",
+      "reference_change_count": 3,
+      "id_card_photo": null,
+      "id_type": null,
+      "reference_source": null
+    }
+  },
+  "verification_attempts": [
+    {
+      "driverId": "DRV-1001",
+      "timestamp": "2026-09-19T08:22:38.091Z",
+      "status": "success",
+      "matchScore": 89,
+      "device_info": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+      "hasFaceCrop": true
+    },
+    {
+      "driverId": "DRV-1001",
+      "timestamp": "2026-09-19T09:47:29.726Z",
+      "status": "success",
+      "matchScore": 99,
+      "device_info": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+      "hasFaceCrop": true
+    },
+    {
+      "driverId": "DRV-1001",
+      "timestamp": "2026-09-19T09:48:34.360Z",
+      "status": "success",
+      "matchScore": 99,
+      "device_info": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+      "hasFaceCrop": true
+    }
+  ]
+}

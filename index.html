@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Driver Face KYC – Real Reference Verification</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Top Driver App Bar -->
+    <header class="driver-header">
+      <div class="driver-profile-mini">
+        <div class="avatar-ring" id="avatarRing">
+          <div id="headerAvatarPlaceholder" class="avatar-placeholder">👤</div>
+          <img id="headerAvatar" src="" alt="Driver Profile" style="display:none;" />
+        </div>
+        <div>
+          <h1 id="driverName">Driver (You)</h1>
+          <p class="driver-vehicle" id="driverVehicle">DL-01-AB-1234 • Ready</p>
+        </div>
+      </div>
+      <div id="driverStatusPill" class="status-pill offline">
+        <span class="dot"></span>
+        <span id="statusPillText">OFFLINE</span>
+      </div>
+    </header>
+
+    <!-- SCREEN 1: Driver Dashboard (Offline) -->
+    <div id="screen-offline" class="screen active">
+      
+      <!-- Card: Real Reference Photo Registration -->
+      <div class="card ref-card">
+        <div class="card-badge" id="refCardBadge">Required Step 1</div>
+        <h2>Official Reference Identity</h2>
+        <p class="hint">Register your verified face identity. The live camera feed is compared against this reference every time you go online.</p>
+
+        <!-- State: No photo registered yet -->
+        <div id="noRefBox" class="ref-empty-box">
+          <!-- Option Tabs: Selfie vs Government ID -->
+          <div class="reg-tabs">
+            <button id="tabSelfieBtn" class="reg-tab active">📸 Live Selfie Camera</button>
+            <button id="tabGovIdBtn" class="reg-tab">🪪 Government ID Card</button>
+          </div>
+
+          <!-- Tab Pane 1: Live Selfie -->
+          <div id="paneSelfie" class="tab-pane active">
+            <div class="empty-icon">📷</div>
+            <p class="empty-msg">Perform a live face scan to register your official portrait.</p>
+            <div class="controls">
+              <button id="btnOpenRefCamera" class="btn primary">📸 Take Live Selfie</button>
+              <label class="btn file-btn">
+                📁 Upload Photo
+                <input type="file" id="idInput" accept="image/*" style="display:none;" />
+              </label>
+            </div>
+          </div>
+
+          <!-- Tab Pane 2: Government ID Card -->
+          <div id="paneGovId" class="tab-pane" style="display:none;">
+            <div class="empty-icon">🪪</div>
+            <p class="empty-msg">Scan or upload your Driver's License, Passport, or National ID. Face photo is automatically extracted.</p>
+            
+            <div class="id-type-select-box">
+              <label for="govIdTypeSelect">Document Type:</label>
+              <select id="govIdTypeSelect" class="styled-select">
+                <option value="Driver's License">Driver's License</option>
+                <option value="Passport">Passport</option>
+                <option value="National ID / Aadhaar">National ID / Aadhaar</option>
+                <option value="State Voter ID">State ID / Voter Card</option>
+              </select>
+            </div>
+
+            <div class="controls">
+              <label class="btn primary file-btn">
+                📁 Upload Government ID (Front)
+                <input type="file" id="govIdFileInput" accept="image/*" style="display:none;" />
+              </label>
+              <button id="btnScanGovIdCam" class="btn">📷 Scan ID with Camera</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- State: Real photo registered & locked -->
+        <div id="hasRefBox" class="ref-registered-box" style="display:none;">
+          <div class="ref-preview-row">
+            <div class="ref-thumb-wrapper">
+              <img id="refThumbnail" alt="Registered Reference" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+            </div>
+            <div class="ref-thumb-info">
+              <span class="verified-tag" id="refSourceTag">🔒 KYC Record Locked</span>
+              <p class="ref-desc" id="refLockedDate">Registered in Database</p>
+              <p class="lock-notice">Reference identity is permanently locked to prevent account sharing and proxy driving.</p>
+              <div class="controls small-controls">
+                <button id="btnAdminUnlock" class="btn text-btn-muted">🔓 Developer / Test Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Go Online -->
+      <div class="card driver-card">
+        <div class="card-badge">Step 2</div>
+        <h2>Driver Readiness</h2>
+        <p class="hint">Always forces a fresh active liveness test and verifies your face against your registered reference photo.</p>
+
+        <div class="verification-meta">
+          <div class="meta-row">
+            <span class="meta-label">Reference Identity:</span>
+            <span class="meta-value" id="refStatusText">Not registered</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Face Matching:</span>
+            <span class="meta-value ok">1:1 Biometric Comparison (≥70%)</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Reference Lock:</span>
+            <span class="meta-value ok" id="refLockStatus">Strict Lock Enforced</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Last Live Check:</span>
+            <span class="meta-value" id="lastVerifiedText">Not verified today</span>
+          </div>
+        </div>
+
+        <button id="btnGoOnline" class="btn btn-go-online" disabled>
+          ⚡ GO ONLINE (VERIFY FACE)
+        </button>
+        <p id="goOnlineHint" class="micro-hint">Please register your real reference photo above first.</p>
+      </div>
+    </div>
+
+    <!-- SCREEN 2: Reference Photo Camera Capture Screen (First-Time Live Enrollment) -->
+    <div id="screen-ref-camera" class="screen">
+      <div class="card kyc-card">
+        <div class="kyc-header">
+          <h2>Live Reference Enrollment</h2>
+          <span class="badge ref-badge">Quality Guard</span>
+        </div>
+        <p class="hint">Position your face inside the oval and hold steady in a frontal portrait pose.</p>
+
+        <div class="camera-container">
+          <video id="refVideo" playsinline autoplay muted></video>
+          <canvas id="refOverlay"></canvas>
+          <div class="face-guide-oval" id="refOvalGuide">
+            <span class="oval-status-tag" id="ovalStatusTag">Position Face in Oval</span>
+          </div>
+        </div>
+
+        <!-- Live Quality & Profile Pose Checklist -->
+        <div class="quality-checklist" id="qualityChecklist">
+          <div class="qc-item" id="qcPose"><span class="qc-icon">⏳</span> <span class="qc-label">Frontal Pose (No Turn / Tilt)</span></div>
+          <div class="qc-item" id="qcCenter"><span class="qc-icon">⏳</span> <span class="qc-label">Centered in Oval</span></div>
+          <div class="qc-item" id="qcDistance"><span class="qc-icon">⏳</span> <span class="qc-label">Optimal Distance</span></div>
+          <div class="qc-item" id="qcLight"><span class="qc-icon">⏳</span> <span class="qc-label">Lighting & Clarity</span></div>
+        </div>
+
+        <!-- Hold Steady Progress Bar -->
+        <div id="holdSteadyBox" class="hold-steady-box" style="display:none;">
+          <p id="holdSteadyText">Hold steady inside the oval: <span id="steadyTimerText">1.5s</span></p>
+          <div class="steady-progress-bar"><div id="steadyProgressFill"></div></div>
+        </div>
+
+        <div class="controls">
+          <button id="btnTakeRefSnapshot" class="btn success" disabled>📸 Capture Reference Photo</button>
+          <button id="btnCancelRefCamera" class="btn">Cancel</button>
+        </div>
+
+        <p id="refCameraStatus" class="status">Align your face inside the oval guide…</p>
+      </div>
+    </div>
+
+    <!-- SCREEN 2B: Government ID Camera Scanner Screen -->
+    <div id="screen-gov-id-camera" class="screen">
+      <div class="card kyc-card">
+        <div class="kyc-header">
+          <h2>Scan Government ID Card</h2>
+          <span class="badge ref-badge">ID Scanner</span>
+        </div>
+        <p class="hint">Hold the front of your ID card flat inside the rectangular frame under good lighting.</p>
+
+        <div class="camera-container id-cam-container">
+          <video id="govIdVideo" playsinline autoplay muted></video>
+          <canvas id="govIdOverlay"></canvas>
+          <div class="id-card-guide-frame">
+            <span class="id-frame-corner tl"></span>
+            <span class="id-frame-corner tr"></span>
+            <span class="id-frame-corner bl"></span>
+            <span class="id-frame-corner br"></span>
+            <span class="id-guide-text">ALIGN FRONT OF ID CARD HERE</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="btnCaptureIdCard" class="btn success" disabled>📸 Capture ID Card</button>
+          <button id="btnCancelGovIdCam" class="btn">Cancel</button>
+        </div>
+
+        <p id="govIdCamStatus" class="status">Align your Driver's License or ID card within the frame…</p>
+      </div>
+    </div>
+
+    <!-- MODAL: Snapshot Review & Confirmation Modal -->
+    <div id="snapshotReviewModal" class="modal-backdrop" style="display:none;">
+      <div class="modal-card">
+        <h3>Review Official Reference Photo</h3>
+        <p class="hint">Inspect your reference photo below. Once confirmed, this will be locked in the database.</p>
+
+        <div class="review-frame">
+          <img id="reviewSnapshotImg" alt="Snapshot Preview" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+        </div>
+
+        <div class="review-meta-box">
+          <div class="meta-row">
+            <span class="meta-label">Capture Quality:</span>
+            <span class="meta-value ok">High Resolution (Frontal Pose) ✓</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Identity Security:</span>
+            <span class="meta-value ok">Biometric Vector Ready</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="btnConfirmSnapshot" class="btn success">✓ Confirm & Lock This Photo</button>
+          <button id="btnRetakeSnapshot" class="btn">🔄 Retake Photo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: Government ID Review Modal -->
+    <div id="govIdReviewModal" class="modal-backdrop" style="display:none;">
+      <div class="modal-card">
+        <h3>Government ID Verification</h3>
+        <p class="hint">ID detected! Extracted portrait photo from document:</p>
+
+        <div class="id-review-grid">
+          <div class="id-review-col">
+            <span class="col-title">Document Card</span>
+            <div class="id-doc-frame">
+              <img id="reviewIdCardImg" alt="ID Document" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+            </div>
+          </div>
+          <div class="id-review-col">
+            <span class="col-title">Extracted Face</span>
+            <div class="id-face-frame">
+              <img id="reviewIdExtractedFace" alt="Extracted Face" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="btnConfirmGovId" class="btn success">✓ Register & Lock Government ID</button>
+          <button id="btnRetakeGovId" class="btn">🔄 Retake / Choose Another</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 3: Live KYC Verification Challenge -->
+    <div id="screen-live" class="screen">
+      <div class="card kyc-card">
+        <div class="kyc-header">
+          <h2>Live Face & Liveness Verification</h2>
+          <span class="badge live-badge">Live Feed</span>
+        </div>
+        <p class="hint">Keep your face within the frame and follow the motion prompt.</p>
+
+        <div class="camera-container">
+          <video id="video" playsinline autoplay muted></video>
+          <canvas id="overlay"></canvas>
+          <div class="face-guide-oval"></div>
+        </div>
+
+        <div id="challengeBox" class="challenge-box">
+          <p id="challengeText">Position your face to begin...</p>
+          <div class="progress">
+            <div id="progressBar"></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="challengeBtn" class="btn primary">Start Liveness Challenge</button>
+          <button id="btnCancelLive" class="btn">Cancel</button>
+        </div>
+
+        <p id="liveStatus" class="status">Initializing camera & neural models…</p>
+
+        <!-- Hidden canvas for capturing verified face crop -->
+        <canvas id="liveFaceCrop" style="display:none;"></canvas>
+        <canvas id="refFaceCrop" style="display:none;"></canvas>
+      </div>
+    </div>
+
+    <!-- SCREEN 4: Biometric Matching Comparison Screen -->
+    <div id="screen-matching" class="screen">
+      <div class="card matching-card">
+        <h2>1:1 Face Match Result</h2>
+        <p class="hint">Comparing your live camera selfie with your registered reference photo in the database:</p>
+
+        <div class="match-faces-grid">
+          <div class="match-col">
+            <span class="col-title">Registered Photo</span>
+            <div class="match-face-frame">
+              <img id="matchRefImg" alt="Reference Face" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+            </div>
+          </div>
+          <div class="match-vs">VS</div>
+          <div class="match-col">
+            <span class="col-title">Live Selfie</span>
+            <div class="match-face-frame">
+              <canvas id="matchLiveCanvas"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-score-badge" id="matchScoreBadge">
+          <span class="score-title">Biometric Similarity</span>
+          <span class="score-number" id="matchScoreNum">--%</span>
+          <span class="score-verdict" id="matchScoreVerdict">Evaluating...</span>
+        </div>
+
+        <p id="matchingStatusText" class="status">Synchronizing with secure backend server...</p>
+      </div>
+    </div>
+
+    <!-- SCREEN 5: Driver Online Screen -->
+    <div id="screen-online" class="screen">
+      <div class="card online-card">
+        <div class="radar-box">
+          <div class="radar-pulse"></div>
+          <div class="radar-icon">🚗</div>
+        </div>
+        <h2 class="online-title">You Are Online!</h2>
+        <p class="online-sub">Searching for nearby trip requests in your area...</p>
+
+        <div class="online-faces-badge">
+          <div class="mini-face-pair">
+            <img id="onlineRefFace" class="mini-face" title="Registered Photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+            <span class="match-symbol">✓</span>
+            <img id="onlineLiveFace" class="mini-face" title="Live Selfie" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+          </div>
+          <span class="verified-score" id="onlineMatchScore">95% Match Verified</span>
+        </div>
+
+        <div class="online-info-box">
+          <div class="info-item">
+            <span class="info-label">DB Status</span>
+            <span class="info-val ok">Verified & Recorded in DB ✓</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Verified At</span>
+            <span class="info-val" id="onlineVerifiedAt">Just now</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Session Validity</span>
+            <span class="info-val" id="onlineValidUntil">Valid for 4 hours</span>
+          </div>
+        </div>
+
+        <button id="btnGoOffline" class="btn btn-offline">
+          Go Offline
+        </button>
+      </div>
+    </div>
+
+    <!-- SCREEN 6: Verification Failed Screen -->
+    <div id="screen-failed" class="screen">
+      <div class="card failed-card">
+        <div class="fail-icon">⚠️</div>
+        <h2>Verification Failed</h2>
+        <p id="failMessage" class="hint">The live verification did not pass or the session was rejected by the server.</p>
+        
+        <div class="controls">
+          <button id="btnRetryLive" class="btn primary">Try Again</button>
+          <button id="btnBackToOffline" class="btn">Back to Dashboard</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Secure Driver KYC • MediaPipe 478 Landmarks • 1:1 Face Match • Backend Enforced</p>
+    </footer>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
