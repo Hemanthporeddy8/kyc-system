@@ -1,9 +1,10 @@
-﻿{
+{
   "name": "face-kyc-web",
   "version": "1.0.0",
   "description": "Driver Face KYC & Liveness Online Verification",
   "main": "server.js",
   "scripts": {
+    "build": "echo 'Static build complete'",
     "start": "node server.js"
   },
   "keywords": ["face-kyc", "liveness", "mediapipe", "driver-app"],
